@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  border-bottom: 1px solid #eee;
+}
+
+.logo img {
+  width: 120px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.navbar nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+.nav-icons i {
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+/* HERO */
+#hero {
+  height: 80vh;
+  background: url('home\ pic\ 1.jpeg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  padding: 50px;
+  color: white;
+}
+
+.hero-text h1 {
+  font-size: 50px;
+  margin: 10px 0;
+}
+
+.hero button {
+  padding: 10px 20px;
+  background: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* CATEGORIES */
+#categories {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  padding: 40px;
+}
+
+.card {
+  background: #ddd;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.card:hover {
+  background: #bbb;
+}
+
+/* PRODUCTS */
+#products {
+  padding: 40px;
+}
+
+#products h2 {
+  margin-bottom: 20px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.clothes{
+  text-align: center;
+}
+.clothes img{
+  width: 100%;
+}
+
+/* FOOTER */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  border-top: 1px solid #eee;
+}
+
+.icons {
+  display: flex;
+  gap: 20px;
+  font-size: 20px;
+}
+
+.icons a:nth-child(1) i { color: #1877F2; }
+.icons a:nth-child(2) i { color: #000000; }
+.icons a:nth-child(3) i { color: #E4405F; }
+
+.icons a:hover i {
+  opacity: 0.7;
+}
+
+/* RESPONSIVE */
+@media(max-width: 768px) {
+  .categories {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero-text h1 {
+    font-size: 30px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+ 
+
